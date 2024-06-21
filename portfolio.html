@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhowmik's Portfolio</title>
+    <link rel="stylesheet" href="beaut.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bhowmik</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Creative Developer & Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Bhowmik, a passionate developer with a keen interest in creating innovative solutions. With a background in web development, I thrive on building user-friendly and visually appealing websites.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1-Data Visualization Using Python</h3>
+            <p>It is a python program which plots graphs on the basis of data from a CSV file.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2-Database Connectivity with Java</h3>
+            <p>A Java program which connects to an SQL database and the connection beteween these 2 is established by a SQL connector for Java.</p>
+        </div>
+        <div class="project3">
+            <h3>Project 3-Pygame</h3>
+            <p>A pygame python program which makes a rotating donut made up of special characters</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tyagibhowmik@gmail.com">tyagibhowmik@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bhowmik-tyagi-abab5b293/" target="_blank">linkedin.com/in/bhowmik</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Bhowmik. All rights reserved.</p>
+    </footer>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
